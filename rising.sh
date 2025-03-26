@@ -56,14 +56,3 @@ git clone https://github.com/yaap/hardware_qcom-caf_sm8150_media.git --depth 1 -
 # Clone prebuilt GCC toolchains
 git clone https://github.com/StatiXOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf.git --depth 1 -b 14.0.0 prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 git clone https://github.com/StatiXOS/android_prebuilts_gcc_linux-x86_arm_arm-eabi.git --depth 1 -b 12.0.0 prebuilts/gcc/linux-x86/arm/arm-eabi
-
-
-
-cd vendor/lineage
-curl -s https://github.com/RisingOS-Revived/android_vendor_lineage/commit/9e0ae87ecec8e189ade138f68ff5d0e263aa1b81.patch | git am
-curl -s https://github.com/RisingOS-Revived/android_vendor_lineage/commit/1fff5e7a63aec3f451a4a8164705039a0872e28a.patch | git am
-cd ../..
-
-cd hardware/xiaomi
-curl -s https://github.com/yaap/hardware_xiaomi/commit/264f7589f11612067ab8f7d7b1507ec4d45dbbb6.patch | git am
-cd ../..
